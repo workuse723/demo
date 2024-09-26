@@ -76,7 +76,7 @@ body,html{height: 100%;}
 
  /*首頁輪播*/
  
- .slider-content{ overflow: hidden;position: relative;max-height: 60vh;}
+ .slider-content{ overflow: hidden;position: relative;max-height: 100vh;}
  .slide-logo{position: absolute;top:0;left: 0;right:0;bottom: 0; z-index:3 ; }
  .slide-logo img{max-width: 20%;}
  .slider, .slider .slick-list, .slider  .slick-track,.slider  li{height: 100%;}/*
@@ -204,6 +204,7 @@ body,html{height: 100%;}
 .home-menu{ background-size:140%; } 
 .home-contact{text-align: center;}
 .fb-page{margin: 10px auto;width:340px; }  
+.slider-content{ max-height: 60vh;}
 } 
  
 @media screen and (max-width:768px) {  
