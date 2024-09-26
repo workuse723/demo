@@ -75,11 +75,15 @@ body,html{height: 100%;}
  .top-nav{position:absolute;top: 0;left: 0;right: 0;z-index:9;}
 
  /*首頁輪播*/
- .slider{max-height: 100vh; }
- .slider-content{ overflow: hidden;position: relative;}
+ 
+ .slider-content{ overflow: hidden;position: relative;max-height: 60vh;}
  .slide-logo{position: absolute;top:0;left: 0;right:0;bottom: 0; z-index:3 ; }
  .slide-logo img{max-width: 20%;}
- .slider  li  img{ -webkit-animation: scaleOut  15s infinite ease; animation: scaleOut  15s infinite ease;}
+ .slider, .slider .slick-list, .slider  .slick-track,.slider  li{height: 100%;}/*
+ .slide1{background: url(../images/slide1.webp) no-repeat top center;background-size:cover ; }
+ .slide2{background: url(../images/slide2.webp) no-repeat top center;background-size:cover ; }
+ .slide3{background: url(../images/slide3.webp) no-repeat top center;background-size:cover ; }*/
+ .slider  li  img{ -webkit-animation: scaleOut  15s infinite ease; animation: scaleOut  15s infinite ease;height: 100%;min-width: 100%;}
  @-webkit-keyframes scaleOut {
   0% {transform: scale(1.0);}   
   50% {transform: scale(1.05);}  
@@ -249,6 +253,7 @@ display: none;overflow-y: auto;}
 .contact-table .fb-btn{font-size: 0.9em;}  
 .fb-btn img{width:30px;}
 .h2 {  font-size: 1.5rem;}
+.slider  li img{width: 150%!important;margin-left: -30%;}
 } 
 @media screen and (max-width:330px) { 
   .title, .section-title { font-size: 2rem;}
